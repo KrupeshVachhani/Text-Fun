@@ -6,9 +6,9 @@ import Navbar from "./comp/Navbar";
 function App() {
   
   return (
-    <>
+    <div className="app" >
       <Navbar />
-    </>
+    </div>
   );
 }
 
