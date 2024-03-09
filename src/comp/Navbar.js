@@ -13,7 +13,7 @@ function Navbar() {
     <Router>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <a className="navbar-brand" href="/">
+          <a className="navbar-brand" href="/home">
             Text Fun
           </a>
           <button
@@ -49,9 +49,9 @@ function Navbar() {
         </div>
       </nav>
       <Routes>
-        <Route path="/" element={<Textarea />} />
-        <Route path="/Pricing.js" element={<Pricing />} />
-        <Route path="/About.js" element={<AboutUs />} />
+        <Route path="/home" element={<Textarea />} />
+        <Route path="/Pricing" element={<Pricing />} />
+        <Route path="/About" element={<AboutUs />} />
       </Routes>
     </Router>
   );
