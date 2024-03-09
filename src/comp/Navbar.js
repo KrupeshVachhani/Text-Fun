@@ -6,14 +6,14 @@ import AboutUs from "./About";
 
 function Navbar() {
   const linkStyle = {
-    textDecoration: "none" // Remove underline from links
+    textDecoration: "none", // Remove underline from links
   };
 
   return (
     <Router>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <a className="navbar-brand" href="/">
+          <a className="navbar-brand" href="/home">
             Text Fun
           </a>
           <button
@@ -27,13 +27,10 @@ function Navbar() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarNav"> {/* Match data-bs-target with ID */}
+          <div className="collapse navbar-collapse" id="navbarNav">
+            {" "}
+            {/* Match data-bs-target with ID */}
             <ul className="navbar-nav">
-              {/* <li className="nav-item">
-                <Link to="/home" style={linkStyle} className="nav-link">
-                  Home
-                </Link>
-              </li> */}
               <li className="nav-item">
                 <Link to="/Pricing.js" style={linkStyle} className="nav-link">
                   Pricing
@@ -49,7 +46,7 @@ function Navbar() {
         </div>
       </nav>
       <Routes>
-        {/* <Route path="/home" element={<Textarea />} /> */}
+        {/* <Route path="/" element={<Textarea />} /> */}
         <Route path="/Pricing.js" element={<Pricing />} />
         <Route path="/About.js" element={<AboutUs />} />
       </Routes>
