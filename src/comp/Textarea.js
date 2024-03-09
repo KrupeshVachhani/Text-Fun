@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 // import Mode from "./Navbar";
 
 export default function Textarea() {
-  const [text, setText] = useState("Enter Text");
+  const [text, setText] = useState("");
   function alternateCaps(t) {
     var result = "";
     for (var i = 0; i < text.length; i++) {
@@ -50,7 +50,7 @@ export default function Textarea() {
   };
   return (
     <>
-    <Navbar/>
+      <Navbar />
       <div className="text">
         <div className="container ">
           <label
@@ -61,12 +61,14 @@ export default function Textarea() {
             Text Playground
           </label>
           <textarea
-            className="form-control border border-primary fs-3 "
+            className="form-control border border-primary fs-3"
             id="exampleFormControlTextarea1"
             rows="8"
             value={text}
             onChange={handelOnChange}
+            placeholder="Enter Text"
           ></textarea>
+
           <button className="btn btn-primary m-3" onClick={handelUpClick}>
             Convert to Uppercase
           </button>
