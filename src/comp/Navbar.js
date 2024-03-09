@@ -30,7 +30,7 @@ function Navbar() {
           <div className="collapse navbar-collapse" id="navbarNav"> {/* Match data-bs-target with ID */}
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link to="/" style={linkStyle} className="nav-link">
+                <Link to="/home" style={linkStyle} className="nav-link">
                   Home
                 </Link>
               </li>
