@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Navbar from "./Navbar";
 // import Mode from "./Navbar";
 
 export default function Textarea() {
@@ -49,6 +50,7 @@ export default function Textarea() {
   };
   return (
     <>
+    <Navbar/>
       <div className="text">
         <div className="container ">
           <label

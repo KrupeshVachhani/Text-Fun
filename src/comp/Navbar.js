@@ -29,11 +29,11 @@ function Navbar() {
           </button>
           <div className="collapse navbar-collapse" id="navbarNav"> {/* Match data-bs-target with ID */}
             <ul className="navbar-nav">
-              <li className="nav-item">
-                <Link to="/" style={linkStyle} className="nav-link">
+              {/* <li className="nav-item">
+                <Link to="/home" style={linkStyle} className="nav-link">
                   Home
                 </Link>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <Link to="/Pricing.js" style={linkStyle} className="nav-link">
                   Pricing
@@ -49,7 +49,7 @@ function Navbar() {
         </div>
       </nav>
       <Routes>
-        <Route path="/" element={<Textarea />} />
+        {/* <Route path="/home" element={<Textarea />} /> */}
         <Route path="/Pricing.js" element={<Pricing />} />
         <Route path="/About.js" element={<AboutUs />} />
       </Routes>
