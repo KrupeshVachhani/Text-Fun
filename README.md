@@ -23,6 +23,7 @@ Fun Text challenges you to swiftly read alternated text patterns. Capitalize on 
 
 ### 📺 Project Demo:
 Check out our project in action! Watch the full demo on YouTube:
+Click Below:
 
 [![Project Demo](https://img.youtube.com/vi/tU2FTxQzWs4/maxresdefault.jpg)](https://www.youtube.com/watch?v=tU2FTxQzWs4)
 
